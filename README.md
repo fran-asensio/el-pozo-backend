@@ -1,37 +1,30 @@
-# 💧 ElPozo - Backend (API Laravel)
+# 💧 ElPozo - Backend API (Laravel)
 
-Este repositorio contiene la lógica de negocio, la gestión de base de datos y la API del proyecto **ElPozo**. Se encarga de la seguridad, la administración de usuarios y la generación de códigos QR.
-
----
-
-### 🔗 Enlaces del Proyecto
-* **Frontend (Web):** [https://github.com/fran-asensio/el-pozo-frontend](https://github.com/fran-asensio/el-pozo-frontend)
-* **Backend (API):** [https://github.com/fran-asensio/el-pozo-backend](https://github.com/fran-asensio/el-pozo-backend)
+Repositorio oficial del Backend para el sistema de gestión de **ElPozo**. Esta API centraliza la lógica de negocio, la seguridad de los datos y la generación de identificadores QR.
 
 ---
 
-### 🛠️ Tecnologías Utilizadas
-* **Framework:** Laravel 11.x (PHP 8.x).
-* **Base de Datos:** MySQL (Hospedada en TiDB Cloud).
-* **Autenticación:** Laravel Sanctum (Seguridad por Tokens).
-* **Generación QR:** Librería `simplesoftwareio/simple-qrcode`.
-* **Despliegue:** Railway (Backend).
+### 🛠️ Stack Tecnológico
+* **Framework:** Laravel 11.x
+* **Lenguaje:** PHP 8.x
+* **Base de Datos:** MySQL (TiDB Cloud)
+* **Autenticación:** Laravel Sanctum (Tokens API)
+* **Generación QR:** `simplesoftwareio/simple-qrcode`
 
 ---
 
-### 📂 Funcionalidades Principales
-* **Gestión de Roles:** Sistema de acceso con dos niveles:
-  * **Admin:** Control total de registros y usuarios.
-  * **User:** Consulta de datos y generación de reportes.
-* **Módulo QR:** Generación automática de códigos únicos para la identificación de registros del pozo.
-* **API REST:** Estructura optimizada para la comunicación con el Frontend.
+### 📂 Funcionalidades del Servidor
+* **Control de Acceso (RBAC):** Gestión de permisos diferenciados entre perfiles **Admin** y **User**.
+* **Motor de QR:** Generación dinámica de códigos QR vinculados a cada registro del pozo.
+* **Persistencia:** Gestión eficiente de registros históricos y auditoría de usuarios.
+* **Infraestructura:** API preparada para despliegue en contenedores (Railway).
 
 ---
 
-### ⚙️ Instalación Local
-Si usas XAMPP o Laragon, sigue estos pasos:
+### ⚙️ Configuración del Entorno
+Para instalar este Backend en local (XAMPP/Laragon):
 
-1. **Clonar e instalar dependencias:**
+1. **Clonar e instalar:**
    ```bash
    git clone [https://github.com/fran-asensio/el-pozo-backend.git](https://github.com/fran-asensio/el-pozo-backend.git)
    composer install
