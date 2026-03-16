@@ -1,0 +1,38 @@
+# --- Dependencias (se instalan con composer install / npm install) ---
+/node_modules
+/vendor
+
+# --- Configuración Sensible (¡NUNCA SUBIR!) ---
+.env
+.env.backup
+.env.production
+.env.local
+/auth.json
+
+# --- Almacenamiento y Caché de Laravel ---
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+
+# --- Archivos de Compilación y Assets ---
+/public/hot
+/public/storage
+/public/build
+.phpunit.result.cache
+
+# --- Herramientas de Desarrollo (IDEs y Editores) ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.phpunit.cache/
+
+# --- Archivos del Sistema Operativo ---
+.DS_Store
+Thumbs.db
