@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Traza extends Model
-{
-    //
+class Traza extends Model {
+    protected $table = 'trazas'; 
+    public $timestamps = false; 
 }
